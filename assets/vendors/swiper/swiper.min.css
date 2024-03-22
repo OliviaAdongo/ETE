@@ -20,12 +20,13 @@
 :root {
   --swiper-theme-color: #007aff;
 }
+/*  added css from external file */
 
 main#carousel {
     grid-row: 1 / 2;
     grid-column: 1 / 8;
     width: 100vw;
-    height: 500px;
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,8 +42,9 @@ main#carousel {
   div.item {
     position: absolute;
     width: 300px;
-    height: 400px;
-    background-color: coral;
+    height: 570px;
+   
+   
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
@@ -53,23 +55,38 @@ main#carousel {
   
   div.item:nth-of-type(1) {
     --offset: 1;
-    background-color: #90f1ef;
+    background-color: #daa62b;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    
   }
   div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #ff70a6;
+    background-color: #daa62b;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(3) {
     --offset: 3;
-    background-color: #ff9770;
+    background-color: #daa62b;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(4) {
     --offset: 4;
-    background-color: #ffd670;
+    background-color: #daa62b;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 20px;
   }
   div.item:nth-of-type(5) {
     --offset: 5;
-    background-color: #e9ff70;
+    border: 5px solid white;
+    padding: 20px;
+    border-radius: 20px;
   }
   
   input:nth-of-type(1) {
